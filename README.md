@@ -1,6 +1,8 @@
 OwlSlider plugin pour PluXml
 =========
-Afficher vos images dans un slider responsive et utilisable dans la sidebar de votre template
+Afficher vos images dans un slider responsive et utilisable dans la sidebar de votre template.
+
+Utilisation du OWL Carousel http://owlgraphic.com/owlcarousel/
 
 
 
