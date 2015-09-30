@@ -61,16 +61,8 @@ class OwlSlider extends plxPlugin {
 
         echo '</div>';
 
-
-      ?>
-
-
-        <br>
-
-        <p><i class="flaticon-accepted"></i>Plud d'info sur ce plugin ? voir l'<a href="plugin-minislider" title="plugin PluXml MiniSlider">article</a></p>
-
-      <?php 
     }
+    
     public function ThemeEndBody(){ ?>
 
 
