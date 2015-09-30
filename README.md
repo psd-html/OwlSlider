@@ -1,4 +1,4 @@
-MiniSlider plugin pour PluXml
+OwlSlider plugin pour PluXml
 =========
 Afficher vos images dans un slider responsive et utilisable dans la sidebar de votre template
 
@@ -18,7 +18,7 @@ Mettre en pause lors du survol de l'image
 Pour afficher le plugin
 --------------
 
-<?php eval($plxShow->callHook('MiniSlider')) ?> 
+<?php eval($plxShow->callHook('OwlSlider')) ?> 
 
 Démo et tutoriel sur http://nextum.fr  avec le template Color
 
