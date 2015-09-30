@@ -29,5 +29,7 @@ Pour afficher le plugin
 
 Démo et tutoriel sur http://nextum.fr  avec le template Color
 
+Si vous avez des questions: http://nextum.fr/plugin-owlslider
+
 
 
