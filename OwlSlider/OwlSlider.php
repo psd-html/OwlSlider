@@ -40,29 +40,33 @@ class OwlSlider extends plxPlugin {
 
         <?php
     }
+    
     public function OwlSlider() {
 
       $dossier =  $this->getParam("dir");
 
-      $directory = 'data/images/'.$dossier; // pluxml version 5.4
+      $directory =  $dossier; // pluxml version 5.4
 
       $files = plxGlob::getInstance(PLX_ROOT.$directory);
 
-      echo '<div id="owl-demo" class="owl-carousel">';
-
         if($styles = $files->query("/[a-z0-9-_\.\(\)]+/i")) {
+
+          echo '<div id="owl-demo" class="owl-carousel">';
+
           foreach($styles as $k=>$v) {
             $slider = $directory.'/'.$v;
 
             echo '<div class="item"><img src="'.$slider.'" alt="" /></div>';
           }
-        }
 
+            echo '</div>';
 
-        echo '</div>';
+        } else 
 
+          echo "Le dossier n'existe pas ou est vide.";
+ 
     }
-    
+
     public function ThemeEndBody(){ ?>
 
 
