@@ -5,6 +5,8 @@ Afficher vos images dans un slider responsive et utilisable dans la sidebar de v
 Utilisation du OWL Carousel http://owlgraphic.com/owlcarousel/
 
 
+![Alt text](http://nextum.fr/owlslider.png)
+
 
 Page d'administration du plugin
 --------------
