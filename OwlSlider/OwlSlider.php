@@ -51,11 +51,11 @@ class OwlSlider extends plxPlugin {
 
         if ($version >= 5.4) {
 
-          $link = "data/medias/";
+          $link = "data/medias";
 
         } else {
 
-            $link = "data/images/";
+            $link = "data/images";
         };
 
       $dossier =  $this->getParam("dir");
@@ -64,11 +64,13 @@ class OwlSlider extends plxPlugin {
 
       $files = plxGlob::getInstance(PLX_ROOT.$directory);
 
-        if($styles = $files->query("/[a-z0-9-_\.\(\)]+/i")) {
+        if($img = $files->query('/[a-z0-9-_]+.(jpg|gif|png|jpeg)$/i')) {
+
+
 
           echo '<div id="owl-demo" class="owl-carousel">';
 
-          foreach($styles as $k=>$v) {
+          foreach($img as $k=>$v) {
             $slider = $directory.'/'.$v;
 
             echo '<div class="item"><img src="'.$slider.'" alt="" /></div>';
