@@ -43,9 +43,24 @@ class OwlSlider extends plxPlugin {
     
     public function OwlSlider() {
 
+      global $plxShow;
+
+      $v = $plxShow->plxMotor->version;
+
+      $version = floatval($v);
+
+        if ($version >= 5.4) {
+
+          $link = "data/medias";
+
+        } else {
+
+            $link = "data/images";
+        };
+
       $dossier =  $this->getParam("dir");
 
-      $directory =  $dossier; // pluxml version 5.4
+      $directory =  $link.$dossier; // lien vers votre dossier 
 
       $files = plxGlob::getInstance(PLX_ROOT.$directory);
 
