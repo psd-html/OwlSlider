@@ -51,11 +51,11 @@ class OwlSlider extends plxPlugin {
 
         if ($version >= 5.4) {
 
-          $link = "data/medias";
+          $link = "data/medias/";
 
         } else {
 
-            $link = "data/images";
+            $link = "data/images/";
         };
 
       $dossier =  $this->getParam("dir");
