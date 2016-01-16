@@ -43,20 +43,14 @@ class OwlSlider extends plxPlugin {
     
     public function OwlSlider() {
 
-      global $plxShow;
+     if ( defined('PLX_VERSION') and version_compare(PLX_VERSION, '5.5', ">=")) {
 
-      $v = $plxShow->plxMotor->version;
+                       $link = "data/medias/";
 
-      $version = floatval($v);
+                   } else {
 
-        if ($version >= 5.4) {
-
-          $link = "data/medias/";
-
-        } else {
-
-            $link = "data/images/";
-        };
+                      $link = "data/images/";
+           }
 
       $dossier =  $this->getParam("dir");
 
