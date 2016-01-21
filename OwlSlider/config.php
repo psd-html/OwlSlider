@@ -8,6 +8,7 @@ if(!empty($_POST)) {
 	$plxPlugin->setParam('time_slider', $_POST['time_slider'], 'cdata');
 	$plxPlugin->setParam('pagination', $_POST['pagination'], 'cdata');
 	$plxPlugin->setParam('hover', $_POST['hover'], 'cdata');
+	$plxPlugin->setParam('script', $_POST['script'], 'cdata');
 	$plxPlugin->saveParams();
 	header('Location: parametres_plugin.php?p=OwlSlider');
 	exit;
@@ -32,6 +33,7 @@ if(!empty($_POST)) {
 <?php 
 	$pagination =  $plxPlugin->getParam('pagination');
 	$hover =  $plxPlugin->getParam('hover');
+	$script = $plxPlugin->getParam('script');
 ?>
 
 <form action="parametres_plugin.php?p=OwlSlider" method="post">
@@ -69,6 +71,14 @@ if(!empty($_POST)) {
 		<select name="hover" id="hover">
 			<option value="true"  <?php if ($hover == 'true') { echo'selected';}?> >Oui</option>
 			<option value="false" <?php if ($hover == 'false') { echo'selected';}?> >Non</option>
+		</select>
+	</p>
+
+	<p>
+		<label for="script">Activer jQuery 2.1.3 ?</label>
+		<select name="script" id="script">
+		   <option value="true" <?php if ($script == 'true') { echo'selected';}?>>Oui</option>
+		   <option value="false" <?php if ($script == 'false') { echo'selected';}?>>Non</option>
 		</select>
 	</p>
 
