@@ -78,10 +78,12 @@ class OwlSlider extends plxPlugin {
  
     }
 
-    public function ThemeEndBody(){ ?>
+    public function ThemeEndBody(){ 
 
+      $script = $this->getParam('script');
 
-        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+     if ($script == 'true') { echo'<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>';}?>
+
 
         <script src="<?php echo PLX_PLUGINS ?>OwlSlider/app/owl.min.js"></script>
 
