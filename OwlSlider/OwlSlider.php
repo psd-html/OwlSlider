@@ -89,7 +89,7 @@ class OwlSlider extends plxPlugin {
 
         <script>
 
-            $(document).ready(function() {
+            jQuery(document).ready(function($) {
 
               var time = <?php echo $this->getParam("time");?>; // time in seconds
 
